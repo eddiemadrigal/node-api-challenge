@@ -1,4 +1,5 @@
 import React from "react";
+import Projects from "./components/Projects"
 import {
   BrowserRouter as Router,
   Switch,
@@ -58,8 +59,4 @@ function About() {
 
 function Users() {
   return <h2>Users</h2>;
-}
-
-function Projects() {
-  return <h2>Projects</h2>;
 }
