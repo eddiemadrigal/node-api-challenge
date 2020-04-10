@@ -1,8 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const Projects = require('../data/helpers/projectModel');
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/', cors(), (req, res) => {
   Projects.getProjectActions(req.query)
     .then( action => {
       res.status(200).json({ action })
