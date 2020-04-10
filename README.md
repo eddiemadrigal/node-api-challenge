@@ -40,13 +40,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Request Route - Server handles a matched route (end point) to a set of instructions
+
+Request Query - The express query is an object that contains a property for each query string parameter in the route
+
 - [ ] Describe Middleware?
+
+Middleware is code that is inserted and executed in the middle of or in between the queue of a given set of instructions.  If "B" code is normally executed right after "A" code ("A" then "B"), middleware would be inserted between them.  The result could look like: "A" -> Middleware 1 -> Middleware 2 -> "B"
 
 - [ ] Describe a Resource?
 
+A resource is anything of value and usually contains data that when combined with other relevant data produces group pieces of information that someone online may want to obtain.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+An API can return status codes that inform the client that a particular request was successfull. For example, a 200 code would indicate that a request was OK.
+
 - [ ] How can we partition our application into sub-applications?
+
+Sub-applications are used to better handle traffic and therefore balance a server's response. Splitting an application into modules that are then inserted into different folders can also help to keep the code organized and manageable.
 
 ## Minimum Viable Product
 
