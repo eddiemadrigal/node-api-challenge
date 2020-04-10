@@ -3,7 +3,7 @@ const Projects = require('../data/helpers/projectModel');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  Projects.get(req.query)
+  Projects.getProjectActions(req.query)
     .then( action => {
       res.status(200).json({ action })
     })
