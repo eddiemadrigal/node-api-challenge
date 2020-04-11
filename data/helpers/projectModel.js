@@ -3,7 +3,7 @@ const mappers = require("./mappers");
 
 module.exports = {
   get,
-  insert,
+  insert, 
   update,
   remove,
   getProjectActions,

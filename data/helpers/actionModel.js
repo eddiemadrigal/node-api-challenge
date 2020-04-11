@@ -4,7 +4,7 @@ const mappers = require('./mappers');
 module.exports = {
   get,
   insert,
-  update,
+  update, 
   remove,
 };
 
@@ -34,7 +34,7 @@ function insert(action) {
     .insert(action, 'id')
     .then(([id]) => get(id));
 }
-
+ 
 function update(id, changes) {
   return db('actions')
     .where('id', id)
